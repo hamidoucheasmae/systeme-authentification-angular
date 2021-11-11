@@ -43,6 +43,12 @@
       "email": "anass@gmail.com",
       "password": "123",
       "id": 6
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 7
     }
   ],
   "profile": {
