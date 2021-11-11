@@ -29,6 +29,7 @@
             ],
             "scripts": ["src/assets/script.js",
               "node_modules/jquery/dist/jquery.min.js"
+              
             
             
             ]
