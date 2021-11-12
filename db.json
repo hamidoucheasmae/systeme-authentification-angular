@@ -8,48 +8,17 @@
     }
   ],
   "signupUsers": [
-    {
-      "username": "fatima",
-      "email": "fatima@g.d",
-      "password": "123",
-      "id": 1
-    },
-    {
-      "username": "hello",
-      "email": "hi@h.c",
-      "password": "123",
-      "id": 2
-    },
+  
+    
     {
       "username": "asmae",
       "email": "asmae@gmail.com",
       "password": "123",
       "id": 3
-    },
-    {
-      "username": "ayoub",
-      "email": "gg@g.d",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "username": "asmae_mid",
-      "email": "test@gmail.com",
-      "password": "123",
-      "id": 5
-    },
-    {
-      "username": "anass",
-      "email": "anass@gmail.com",
-      "password": "123",
-      "id": 6
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 7
     }
+   
+   
+    
   ],
   "profile": {
     "name": "typicode"
