@@ -1,26 +1,10 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "username": "json-server",
-      "email": "typicode",
-      "password": "typicode"
-    }
-  ],
   "signupUsers": [
-  
-    
     {
       "username": "asmae",
       "email": "asmae@gmail.com",
       "password": "123",
       "id": 3
     }
-   
-   
-    
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

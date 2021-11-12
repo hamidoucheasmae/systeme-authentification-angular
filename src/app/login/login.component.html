@@ -1,20 +1,4 @@
-<!-- <div id="container">
-    <header>Connectez-vous</header>
-    <form [formGroup]="loginForm" (ngSubmit)="login()">
-       <fieldset>
 
-          <input formControlName="email" type="email" id="email" placeholder="Email" required>
-          
-          <input formControlName="password" type="password" id="password" placeholder="Password" required>
-          
-          <label for="submit"></label>
-          <input type="submit" name="submit" id="submit" value="CONNEXION">
-          <a routerLink="/signup">Vous n'avez pas de compte? Inscrivez-vous</a>
-       </fieldset>
-       
-    </form>
-    
- </div> -->
  <div class="main">
  
        <div class="container b-container is-txl" id="b-container">
@@ -22,8 +6,11 @@
           <h2 class="form_title title">Sign in to Website</h2>
         
           <input  formControlName="email" class="form__input" type="email" placeholder="Email">
+          <span class="text-danger" *ngIf="loginForm.controls['email'].touched && loginForm.hasError('required', 'email')">*email required</span> <br/>
           <input formControlName="password" class="form__input" type="password" placeholder="Password">
-          <button class="form__button button submit">SIGN IN</button>
+          <span class="text-danger" *ngIf="loginForm.controls['password'].touched && loginForm.hasError('required', 'password')">*password required</span><br/>
+         
+          <button [disabled]="!loginForm.valid" class="form__button button submit">SIGN IN</button>
         </form>
       </div>
       <div class="switch is-txr" id="switch-cnt">

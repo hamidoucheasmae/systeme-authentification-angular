@@ -3,12 +3,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
-// declare let switchCtn:any;
-// declare  function getButtons () :  void;
-// declare  function mainF () :  void;
 
-// declare  function changeForm () :  void;
-// declare  function e () :  void;
 
 @Component({
   selector: 'app-login',
@@ -44,10 +39,10 @@ export class LoginComponent implements OnInit {
          this.router.navigate(['home'])
        }
        else{
-         alert("Les informations sont incorrectes")
+         alert("The information is incorrect")
        }
     },err=>{
-      alert("Erreur")
+      alert("ERROR")
     })
    
     

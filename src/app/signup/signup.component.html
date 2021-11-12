@@ -4,9 +4,18 @@
      <form class="form" id="a-form" [formGroup]="signupForm" (ngSubmit)="signUp()" >
        <h2 class="form_title title">Create Account</h2>
         <input  formControlName="username"  class="form__input" type="text" placeholder="UserName">
+        <span class="text-danger" *ngIf="signupForm.controls['username'].touched && signupForm.hasError('required', 'username')">*username required</span>
+         
        <input  formControlName="email" class="form__input" type="text" placeholder="Email">
+       <span class="text-danger" *ngIf="signupForm.controls['email'].touched && signupForm.hasError('required', 'email')">*email required</span>
+         
        <input  formControlName="password" class="form__input" type="password" placeholder="Password">
-       <button class="form__button button submit "type="submit" name="submit">SIGN UP</button>
+       <span class="text-danger" *ngIf="signupForm.controls['password'].touched && signupForm.hasError('required', 'password')">*password required</span><br/>
+          
+       <input  formControlName="password" class="form__input" type="password" placeholder="Confirm Password">
+       <span class="text-danger" *ngIf="signupForm.controls['password'].touched && signupForm.hasError('required', 'password')">*password required</span><br/>
+          
+       <button  [disabled]="!signupForm.valid" class="form__button button submit "type="submit" name="submit">SIGN UP</button>
      </form>
    </div>
 
