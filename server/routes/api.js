@@ -49,10 +49,41 @@ router.post('/login', (req,res)=>{
             }
         }
     })
-
-
 })
 
+// 
+router.get('/userDashboard',(req, res)=>{
+    let userDashboard =[
 
+        {
+            "_id":"1",
+            "name": "HELLO",
+
+        }
+    ]
+    res.json(userDashboard)
+})
+//
+
+router.get('/adminDashboard',(req, res)=>{
+    let adminDashboard =[
+        {
+            "_id":"1",
+            "name": "auto expo",
+
+        },
+        {
+            "_id":"2",
+            "name": "auto expo",
+            
+        },
+        {
+            "_id":"3",
+            "name": "auto expo",
+            
+        }
+    ]
+    res.json(adminDashboard)
+})
 
 module.exports = router
