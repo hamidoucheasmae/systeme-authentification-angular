@@ -52,8 +52,8 @@ router.post('/login', (req,res)=>{
 })
 
 // 
-router.get('/userDashboard',(req, res)=>{
-    let userDashboard =[
+router.get('/home',(req, res)=>{
+    let home =[
 
         {
             "_id":"1",
@@ -61,7 +61,7 @@ router.get('/userDashboard',(req, res)=>{
 
         }
     ]
-    res.json(userDashboard)
+    res.json(home)
 })
 //
 
