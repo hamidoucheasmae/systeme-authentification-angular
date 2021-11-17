@@ -1,12 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
+import  {HttpClientModule} from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +23,10 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
+  AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
