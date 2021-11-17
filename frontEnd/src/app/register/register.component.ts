@@ -10,13 +10,18 @@ import { AuthService } from '../auth.service';
 export class RegisterComponent implements OnInit {
 
   registerUserData =  <any> {}
-  constructor() { }
+  constructor(private _auth: AuthService) { }
 
   ngOnInit(): void {
   }
 
 
   registerUser(){
-    console.log(this.registerUserData)
+    this._auth.registerUser(this.registerUserData)
+    .subscribe(
+      res =>console.log(res),
+      err =>console.log(err)
+    )
+    // console.log(this.registerUserData)
   }
 }
