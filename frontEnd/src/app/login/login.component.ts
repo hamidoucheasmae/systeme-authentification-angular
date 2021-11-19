@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   loginUserData= <any>{}
-  constructor() { }
+  constructor(private _auth: AuthService) { }
 
   ngOnInit(): void {
   }
@@ -16,6 +17,11 @@ export class LoginComponent implements OnInit {
 
 // method
   loginUser(){ 
-console.log(this.loginUserData)
+// console.log(this.loginUserData)
+    this._auth.loginUser(this.loginUserData)
+      .subscribe (
+          res => console.log (res),
+          err => console.log (err)
+      )
   }
 }
