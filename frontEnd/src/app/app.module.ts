@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AuthService } from './auth.service';
-
+import { HomeService } from './home.service';
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import { AuthService } from './auth.service';
   AppRoutingModule
 
   ],
-  providers: [AuthService],
+  providers: [AuthService, HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
