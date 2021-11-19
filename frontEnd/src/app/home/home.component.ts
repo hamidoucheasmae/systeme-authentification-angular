@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../home.service';
+import { EventService } from '../event.service';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +9,10 @@ import { HomeService } from '../home.service';
 export class HomeComponent implements OnInit {
 
   home =[]
-  constructor(private _homeService: HomeService) { }
+  constructor(private _eventService: EventService) { }
 
   ngOnInit() {
-    this._homeService.getHome()
+    this._eventService.getHome()
       .subscribe(
         res => this.home =res,
         err => console.log(err)

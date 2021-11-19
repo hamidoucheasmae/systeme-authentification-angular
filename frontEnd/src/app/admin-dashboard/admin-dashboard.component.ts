@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../home.service';
+import { EventService } from '../event.service';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -9,10 +9,10 @@ import { HomeService } from '../home.service';
 export class AdminDashboardComponent implements OnInit {
 
   adminDashboard =[]
-  constructor(private _homeService: HomeService) { }
+  constructor(private _eventService: EventService) { }
 
   ngOnInit() {
-    this._homeService.getAdminDashboard()
+    this._eventService.getAdminDashboard()
       .subscribe(
         res => this.adminDashboard =res,
         err => console.log(err)

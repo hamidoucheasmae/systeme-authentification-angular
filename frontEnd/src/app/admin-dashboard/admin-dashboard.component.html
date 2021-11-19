@@ -1,1 +1,61 @@
-<p>admin-dashboard works!</p>
+
+  <!-- Projects Section -->
+  <section class="projects"  id="projects">
+    <h2 class="section-title fill">Projects</h2>
+    <div class="container "  >
+     <div class="row " >
+      <div class="col-sm"  *ngFor="let home of adminDashboard">
+      <div  class="projects-content  ">
+        <div class="project" >
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Project Image">
+          </div>
+          <div class="project-details">
+            <h3 class="project-tile">{{home.name}}</h3>
+            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, quos recusandae. Vitae hic sit accusantium!</p>
+            <div class="btns-group">
+              <a href="#" class="btn btn-primary">view project</a>
+            </div>
+          </div>
+        </div>
+
+   
+      </div>
+      <div class="more-projects">
+        <a href="https://codepen.io/FedLover/" target="_blank" class="btn btn-primary" id="profile-link">show more <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+</div>
+</div>
+  </section>
+<!-- 
+  <section class="projects"  id="projects">
+  <div class="container">
+    
+    <div class="row " >
+      <div class="col-sm"  *ngFor="let home of adminDashboard">
+          
+        <div  class="projects-content  ">
+        <div class="project" >
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="Project Image">
+            </div>
+            <div class="project-details">
+              <h3 class="project-tile">{{home.name}}</h3>
+              <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, quos recusandae. Vitae hic sit accusantium!</p>
+              <div class="btns-group">
+                <a href="#" class="btn btn-primary">view project</a>
+              </div>
+            </div>
+          </div>
+  
+     
+        </div>
+      </div>
+      
+    </div>
+</div>
+</section> -->
+
+
+     

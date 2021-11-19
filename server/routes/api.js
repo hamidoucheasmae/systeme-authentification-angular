@@ -59,6 +59,11 @@ router.get('/home',(req, res)=>{
             "_id":"1",
             "name": "HELLO",
 
+        },
+        {
+            "_id":"1",
+            "name": "bye",
+
         }
     ]
     res.json(home)
