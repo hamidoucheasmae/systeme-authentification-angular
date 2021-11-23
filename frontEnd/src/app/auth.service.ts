@@ -24,4 +24,15 @@ export class AuthService {
   loggedIn(){
     return !!localStorage.getItem('token') 
   }
+
+  getToken (){
+    return localStorage.getItem('token')
+  }
+
+  validateLogin(user){
+		return this.http.post('/api/user/login',{
+			username : user.username,
+			password : user.password
+		})
+	}
 }

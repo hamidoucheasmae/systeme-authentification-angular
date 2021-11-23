@@ -5,6 +5,7 @@ const User =require ('../models/user')
 const mongoose = require ('mongoose')
 const user = require('../models/user')
 const db = "mongodb+srv://ah-user:ah-user@cluster0.y8kt0.mongodb.net/auth-db?retryWrites=true&w=majority"
+
 mongoose.connect(db, err=>{
     if (err){
         console.error('Error!'+ err)
@@ -13,6 +14,25 @@ mongoose.connect(db, err=>{
         console.log ('connected to mongodb')
     }
 })
+
+// function verifyToken(req, res, next) {
+//     if (!req.headers.authorization){
+//         return res.status(401).send('Unauthorized request 0')
+//     }
+//  let token = req.headers.authorization.split('')[1]
+//  if(token === 'null') {
+//     return res.status(401).send('Unauthorized request 1')    
+//   }
+//   let payload = jwt.verify(token, 'secretKey')
+//   if(!payload) {
+//     return res.status(401).send('Unauthorized request 2')    
+//   }
+//   req.userId = payload.subject
+//   next()
+// }
+
+
+
 
 router.get('/', (req,res) => {
     res.send('From Api route')
@@ -75,7 +95,7 @@ router.get('/home',(req, res)=>{
 })
 //
 
-router.get('/adminDashboard',(req, res)=>{
+router.get('/adminDashboard', (req, res)=>{
     let adminDashboard =[
         {
             "_id":"1",

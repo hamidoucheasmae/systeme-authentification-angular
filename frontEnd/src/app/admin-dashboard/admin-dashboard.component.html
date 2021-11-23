@@ -1,10 +1,10 @@
 
   <!-- Projects Section -->
-  <section class="projects"  id="projects">
+  <section class="projects"  id="projects"  *ngFor="let home of adminDashboard">
     <h2 class="section-title fill">Projects</h2>
     <div class="container "  >
      <div class="row " >
-      <div class="col-sm"  *ngFor="let home of adminDashboard">
+      <div class="col-sm" >
       <div  class="projects-content  ">
         <div class="project" >
           <div class="project-image">
@@ -22,8 +22,7 @@
    
       </div>
       <div class="more-projects">
-        <a href="https://codepen.io/FedLover/" target="_blank" class="btn btn-primary" id="profile-link">show more <i class="fas fa-chevron-right"></i></a>
-      </div>
+         </div>
     </div>
 </div>
 </div>
