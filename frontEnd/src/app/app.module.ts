@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AuthService } from './auth.service';
 import { EventService } from './event.service';
+import { AuthGuard } from './auth.guard';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { EventService } from './event.service';
   AppRoutingModule
 
   ],
-  providers: [AuthService, EventService],
+  providers: [AuthService, EventService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
