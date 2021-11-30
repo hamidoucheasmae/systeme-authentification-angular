@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "json-server",
+      "email": "typicode",
+      "password": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "fatima",
+      "email": "fatima@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "fatima",
+      "email": "fatima@g.d",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "fatima",
+      "email": "fatima@g.d",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "fatima",
+      "email": "fatima@g.d",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "fatima",
+      "email": "fatima@g.d",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "username": "fatima",
+      "email": "dahri.fatima.dev@gmail.com",
+      "password": "123",
+      "id": 6
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

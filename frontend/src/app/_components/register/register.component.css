@@ -1,0 +1,83 @@
+.text-danger{
+    color : #b52b65 !important;
+  }
+  
+  .contain {
+    font-family: 'M PLUS 1', sans-serif ;
+    background: rgba(3, 3, 55, 0.5);
+    width: 40vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  header {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    height: 3rem;
+    background: rgba(3, 3, 55, 0.7);
+    font-size: 1.4rem;
+    color: #d3d3d3;
+  }
+  
+  fieldset {
+    border: 0;
+    text-align: center;
+    padding-top: 25px;
+  }
+  
+  .submit {
+    background: #b52b65;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 70%;
+  }
+  
+  input {
+    background: transparent;
+    border: 0;
+    border-left: 4px solid;
+    padding: 10px;
+    color: white;
+    width: 70%;
+    margin: 15px;
+    border-left: 4px solid;
+    border-color: #b52b65;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: 0;
+    background: rgba(235, 30, 54, 0.3);
+    border-radius: 1rem;
+    border-color: transparent;
+  }
+  
+  ::placeholder {
+    color: #d3d3d3;
+  }
+  
+  a{
+    color: #fff;
+  }
+  
+  /*Media queries */
+  @media (maX-width: 800px) {
+    .contain {
+        width: 80vw;
+        margin-bottom: 10%;
+    }
+  }
+    @media (min-width: 569px) and (max-width: 768px) {
+        .contain {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    }

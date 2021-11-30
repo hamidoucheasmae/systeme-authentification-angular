@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "json-server",
+      "email": "typicode",
+      "password": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "fatima",
+      "email": "fatima@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "asmae",
+      "email": "asmae@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "username": "test",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "username": "test1",
+      "email": "test1@gmail.com",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
