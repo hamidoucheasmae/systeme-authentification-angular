@@ -11,6 +11,8 @@ import { ProfileComponent } from './_components/profile/profile.component';
 import { AdminComponent } from './_components/admin/admin.component';
 import { UserComponent } from './_components/user/user.component';
 import { AuthInterceptorProviders } from './_helpers/auth.interceptor';
+import { UsersListComponent } from './_components/users-list/users-list.component';
+import { UserDetailsComponent } from './_components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AuthInterceptorProviders } from './_helpers/auth.interceptor';
     ProfileComponent,
     AdminComponent,
     UserComponent,
+    UsersListComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,64 @@
+<!-- <p>users-list works!</p> -->
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by username"
+          [(ngModel)]="username"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchUser()"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4>users List</h4>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let user of users; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveUser(user, i)"
+        >
+          {{ user.username }}
+        </li>
+      </ul>
+  
+      <button class="m-3 btn btn-sm btn-danger" (click)="removeAllUsers()">
+        Remove All
+      </button>
+    </div>
+    <div class="col-md-6">
+      <div *ngIf="currentUser.id">
+        <h4>username</h4>
+        <div>
+          <label><strong>username:</strong></label> {{ currentUser.username }}
+        </div>
+        <div>
+          <label><strong>email:</strong></label>
+          {{ currentUser.email }}
+        </div>
+        <!-- <div>
+          <label><strong>Status:</strong></label>
+          {{ currentTutorial.published ? "Published" : "Pending" }}
+        </div> -->
+  
+        <a class="badge badge-warning" routerLink="/users/{{ currentUser.id }}">
+          Edit
+        </a>
+      </div>
+  
+      <div *ngIf="!currentUser">
+        <br />
+        <p>Please click on a user...</p>
+      </div>
+    </div>
+  </div>
