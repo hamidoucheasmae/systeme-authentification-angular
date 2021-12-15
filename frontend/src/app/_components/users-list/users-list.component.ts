@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { CrudService } from 'src/app/_services/crud.service';
+import {  Router } from '@angular/router';
+
 @Component({
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
@@ -14,7 +16,7 @@ export class UsersListComponent implements OnInit {
   currentIndex = -1;
   username = '';
 
-  constructor(private crudService:CrudService) { }
+  constructor(private crudService:CrudService , private router: Router) { }
 
   ngOnInit() {
     this.retrieveUsers();
@@ -60,6 +62,19 @@ export class UsersListComponent implements OnInit {
         data => {
           this.users = data;
           console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+
+  deleteUser(): void {
+    this.crudService.delete(this.currentUser.id)
+      .subscribe(
+        response => {
+          console.log(response);
+          this.router.navigate(['/users']);
         },
         error => {
           console.log(error);
