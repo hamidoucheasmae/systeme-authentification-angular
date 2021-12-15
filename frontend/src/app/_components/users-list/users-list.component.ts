@@ -55,7 +55,7 @@ export class UsersListComponent implements OnInit {
     this.currentUser = {};
     this.currentIndex = -1;
 
-    this.crudService.findByTitle(this.username)
+    this.crudService.findByUser(this.username)
       .subscribe(
         data => {
           this.users = data;

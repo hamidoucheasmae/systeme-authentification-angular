@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../models/user.model';
 
-const baseUrl = 'http://localhost:8080/api/crud/user';
+const baseUrl = 'http://localhost:8001/api/crud/user';
+
 
 @Injectable({
   providedIn: 'root'
@@ -36,7 +37,7 @@ export class CrudService {
     return this.http.delete(baseUrl);
   }
 
-  findByTitle(title: any): Observable<User[]> {
-    return this.http.get<User[]>(`${baseUrl}?title=${title}`);
+  findByUser(username: any): Observable<User[]> {
+    return this.http.get<User[]>(`${baseUrl}?username=${username}`);
   }
 }

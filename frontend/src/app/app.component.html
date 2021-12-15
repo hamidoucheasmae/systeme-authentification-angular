@@ -20,9 +20,19 @@
         <li class="nav-item">
           <a href="/login" class="nav-link" routerLink="login">Login</a>
         </li>
+
       </ul>
+
+ 
   
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+
+        <li class="nav-item">
+          <a routerLink="users" class="nav-link">users</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="register" class="nav-link">Add</a>
+        </li>
         <li class="nav-item">
           <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
         </li>
