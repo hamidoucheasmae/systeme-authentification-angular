@@ -51,7 +51,7 @@ export class UsersListComponent implements OnInit {
           console.log(error);
         });
   }
-  searchTitle(): void {
+  searchUser(): void {
     this.currentUser = {};
     this.currentIndex = -1;
 

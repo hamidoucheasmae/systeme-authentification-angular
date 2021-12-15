@@ -29,12 +29,14 @@
           (click)="setActiveUser(user, i)"
         >
           {{ user.username }}
+          {{ user.email }}
         </li>
       </ul>
   
       <button class="m-3 btn btn-sm btn-danger" (click)="removeAllUsers()">
         Remove All
       </button>
+      
     </div>
     <div class="col-md-6">
       <div *ngIf="currentUser.id">
@@ -51,9 +53,9 @@
           {{ currentTutorial.published ? "Published" : "Pending" }}
         </div> -->
   
-        <a class="badge badge-warning" routerLink="/users/{{ currentUser.id }}">
+        <button class="badge badge-warning" routerLink="/users/{{ currentUser.id }}">
           Edit
-        </a>
+        </button>
       </div>
   
       <div *ngIf="!currentUser">
